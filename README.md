@@ -4,6 +4,8 @@
 
 ## 路由demo是vuex的测试页
 
+## 路由mine是element-ui的测试页
+
 > A Vue.js project
 *项目预览链接
 (https://zhuangjianlol.cn/dist)
