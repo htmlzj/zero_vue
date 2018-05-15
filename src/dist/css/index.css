@@ -1,0 +1,111 @@
+body{
+  margin:0;
+  position: relative;
+  top:0;
+  left:0;
+  width: 100vw;
+  height:auto;
+  background-color: rgb(243,243,243);
+}
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #000;
+  width:100vw;
+  height:100vh;
+  /*margin-top: 10vmin;*/
+}
+#header{
+  width: 100vw;
+  height:5vmin;
+  background-color: rgb(0,0,0);
+  color: white;
+  overflow: hidden;
+}
+#header img{
+  width:5vmin;
+  float: left;
+  margin-left: 2.5vmin;
+}
+#header .header_right{
+  float: right;
+  margin-top: 1.5vmin;
+  margin-right: 2.5vmin;
+}
+#header .header_right a{
+  color: rgb(255,255,255);
+  text-decoration: none;
+}
+
+/*hello*/
+#app .hello{
+  width: 100vw;
+  min-height:80vh;
+}
+/*footer*/
+#app footer{
+  width:100vw;
+  height:10vh;
+  color: #888;
+  text-align: center;
+
+}
+/*登录页*/
+.denglu label{
+  display: block;
+  margin:2vmin auto;
+}
+/*注册*/
+.zhuce label{
+  display: block;
+  margin:0 auto;
+}
+.tishi{
+  height:10px;
+}
+/*index*/
+.hello .tit_box{
+  width: 90%;
+  margin: 1vmin auto;
+  border: 1px solid #333;
+  text-align: left;
+  height: 69vh;
+}
+
+@media screen and (max-width:600px){
+  #header{
+    width: 100vw;
+    height:30vmin;
+    background-color: rgba(0,0,0,.8);
+    overflow: hidden;
+  }
+  #header img{
+    width:15vmin;
+    float: none;
+    margin-top: 2.5vmin;
+  }
+  #header .header_right{
+    width:100vmin;
+    float: none;
+    margin-top: 2.5vmin;
+    text-align: center;
+
+  }
+}
+
+/* abni */
+.child-view {   
+  transition: all .5s cubic-bezier(.55,0,.1,1);  
+}  
+.slide-left-enter, .slide-right-leave-active {  
+  opacity: 0;  
+  -webkit-transform: translate(30px, 0);  
+  transform: translate(30px, 0);  
+}  
+.slide-left-leave-active, .slide-right-enter {  
+  opacity: 0;  
+  -webkit-transform: translate(-30px, 0);  
+  transform: translate(-30px, 0);  
+} 
