@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div id="header">
-      <img src="./assets/logo.png"/>
+      <img src="./assets/logo.png" @click="$router.push('/')"/>
       <div class="header_right">
         <router-link to="/">首页</router-link> |
         <router-link v-if="!isLogin" to="denglu">登录</router-link>

@@ -58,6 +58,7 @@
 
       </table>
       </div>
+      <el-pagination background layout="prev, pager, next" :page-count="index"  @current-change="tz"></el-pagination>
   </div>
 </template>
 
@@ -68,11 +69,14 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
-      test: 'hello zero'
+      test: 'hello zero',
+      index: 66,
     }
   },
   methods:{
-
+    tz(val){
+      console.log(val)
+    },
   }
 }
 </script>

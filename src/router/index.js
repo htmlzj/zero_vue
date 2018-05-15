@@ -6,6 +6,7 @@ import index from '@/components/index'
 import err from '@/components/err'
 import demo from '@/components/demo-vuex'
 import mine from '@/components/mine'
+import remine from '@/components/remine'
 
 Vue.use(Router)
 
@@ -35,6 +36,11 @@ export default new Router({
       path: '/mine',
       name: 'mine',
       component: mine
+    },
+    {
+      path: '/remine',
+      name: 'remine',
+      component: remine
     },
     {
       path: '*',
