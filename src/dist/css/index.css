@@ -17,6 +17,7 @@ body{
   height:100vh;
   /*margin-top: 10vmin;*/
 }
+
 #header{
   width: 100vw;
   height:5vmin;
@@ -42,7 +43,14 @@ body{
 /*hello*/
 #app .hello{
   width: 100vw;
-  min-height:80vh;
+  height:80vh;
+  overflow: auto;
+}
+/* body */
+#app .body{
+  width: 100vw;
+  height:80vh;
+  overflow: hidden;
 }
 /*footer*/
 #app footer{
@@ -73,6 +81,10 @@ body{
   text-align: left;
   height: 69vh;
 }
+.formTest{
+  width: 32vw;
+    margin: 7vmin auto;
+}
 
 @media screen and (max-width:600px){
   #header{
@@ -80,6 +92,10 @@ body{
     height:30vmin;
     background-color: rgba(0,0,0,.8);
     overflow: hidden;
+  }
+  .formTest{
+    width: 100vw;
+      margin: 0 auto;
   }
   #header img{
     width:15vmin;
@@ -101,11 +117,12 @@ body{
 }  
 .slide-left-enter, .slide-right-leave-active {  
   opacity: 0;  
-  -webkit-transform: translate(30px, 0);  
-  transform: translate(30px, 0);  
+  -webkit-transform: translate(10vmin, 0);  
+  transform: translate(10vmin, 0);  
 }  
 .slide-left-leave-active, .slide-right-enter {  
   opacity: 0;  
-  -webkit-transform: translate(-30px, 0);  
-  transform: translate(-30px, 0);  
+  -webkit-transform: translate(-10vmin, 0);  
+  transform: translate(-10vmin, 0);  
 } 
+

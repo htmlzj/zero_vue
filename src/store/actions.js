@@ -11,4 +11,9 @@ export const testfun = ({commit}) => {
     test: '我是修改后的数据'
   });
 };
+export const denglu = ({commit}) => {
+  commit({
+    type: 'denglu',     //对应mutation.js中的getMsg方法
+  });
+};
 

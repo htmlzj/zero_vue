@@ -9,14 +9,20 @@ import './dist/css/index.css'
 import './dist/bootstrap/css/bootstrap.css'
 // import $ from 'jquery'
 import './dist/bootstrap/js/bootstrap.min'
+// ElementUI
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-chalk/index.css';
 
+Vue.use(ElementUI);
 
 Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  render: h => h(App),
   router,
   store,
   components: { App },
-  template: '<App/>'
+  template: '<App/>',
+  
 })

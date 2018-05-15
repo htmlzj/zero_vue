@@ -3,16 +3,19 @@
     <div id="header">
       <img src="./assets/logo.png"/>
       <div class="header_right">
-        <router-link to="/">首页</router-link>|
+        <router-link to="/">首页</router-link> |
         <router-link v-if="!isLogin" to="denglu">登录</router-link>
-        <router-link v-if="isLogin" to="mine">{{LoginName}}</router-link>|
+        <router-link v-if="isLogin" to="mine">{{LoginName}}</router-link> |
         <router-link v-if="!isLogin" to="zhuce">注册</router-link>
         <span v-if="isLogin" v-on:click="clearLogin()">注销</span>
       </div>
     </div>
-    <transition :name="transitionName">
+    <div class="body">
+      <transition :name="transitionName">
        <router-view v-on:checkLogin="checkLogin" :isLogin="isLogin" class="child-view"/>
     </transition>
+    </div>
+    
   
     <footer>
       <hr/>

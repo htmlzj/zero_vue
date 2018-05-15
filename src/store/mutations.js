@@ -10,4 +10,7 @@ export const getTest = (state, payload) => {
   console.log(payload)
   state.test = payload.test;
 }
+export const denglu = (state, payload) => {
+  console.log(state)
+}
 

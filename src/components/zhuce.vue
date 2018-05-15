@@ -74,9 +74,6 @@ export default {
   },
   methods:{
     atest(){
-      console.log(this.mail);
-      console.log(this.usr);
-      console.log(this.pwd);
       if(!this.mail||!this.usr||!this.pwd){
         alert("内容不能为空");
         return
