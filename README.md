@@ -1,7 +1,12 @@
-# v1
+# Zero 的vue测试项目
+
+## 希望撸出一个论坛项目，项目基于vue-cli生成页开发
+
+## 路由demo是vuex的测试页
 
 > A Vue.js project
-
+*项目预览链接
+(https://zhuangjianlol.cn/dist)
 ## Build Setup
 
 ``` bash
